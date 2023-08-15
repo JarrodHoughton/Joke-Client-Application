@@ -1,0 +1,283 @@
+body {
+        background-image: url("Images/joke-neon-sign.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+	color: white;
+        font-weight: bold;
+	font-family: sans-serif;
+}
+
+.scroll {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 200px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding: 20px;
+      }
+
+ .joke {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.jokeCategories_1 {
+    width: 50%;
+    text-align: center;
+    padding: 5px 10px;
+    background-color:#e4dba6;
+    border-width: 4px;
+    border-color: white;
+}
+
+.jokeCategories {
+    text-align: center;
+    width: 50%;
+    color: white;
+    background-color:#e4dba6;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 2px;
+    border-style: solid;
+    padding: 15px 25px;
+}
+
+.inputTextArea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  font-family: sans-serif;
+}
+
+textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.backToMenu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.jokeLabel {
+    width: 50%;
+    padding: 5px;
+    background-color:#e4dba6;
+    border-width: 4px;
+    border-color: white;
+}
+
+input[type=text] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  font-family: sans-serif;
+}
+
+input[type=password] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  font-family: sans-serif;
+}
+
+input[type=submit] {
+    color: white;
+    background-color:#e4dba6;
+    text-decoration: none;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 12px 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition-duration: 0.2s;
+}
+
+input[type=submit]:hover {
+    color: #e4dba6;
+    background-color:white;
+    border-color: #e4dba6;
+}
+
+input[type=submit]:focus {
+    color: white;
+    background-color:#e4dba6;
+    border-color: white;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+a:link, a:visited {
+    color: white;
+    background-color:#e4dba6;
+    text-decoration: none;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 12px 25px;
+    text-align: center;
+    transition-duration: 0.2s;
+}
+
+a:hover {
+    color: #e4dba6;
+    background-color:white;
+    border-color: #e4dba6;
+}
+
+a:active {
+    color: white;
+    background-color:#e4dba6;
+    border-color: white;
+}
+
+.categories {
+    float: left;
+    width: 50%;
+}
+
+.jokeArticle {
+    float: right;
+    width: 50%;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Styling for checkboxes*/
+/* The container */
+.container {
+    width: 90%;
+    color: white;
+    background-color:#e4dba6;
+    text-decoration: none;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container:hover {
+    color: #e4dba6;
+    background-color:white;
+    border-color: #e4dba6;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/*.container input:checked ~ .container {
+    color: #e4dba6;
+    background-color:white;
+    border-color: #e4dba6;
+}*/
+
+/* Create a custom checkbox */
+.checkmark {
+  border-color: DarkGrey;
+  border-radius: 2px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container:hover input ~ .container {
+  background-color: Blue;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
